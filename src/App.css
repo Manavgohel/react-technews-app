@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(219 229 249);
+}
+
+h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.4rem;
+}
+
+.heading {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.4rem;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  width: 65%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+p {
+  margin: 2rem 0;
+  color: rgba(21, 19, 60, 0.5);
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.stories-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.card {
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  color: #15133c;
+}
+
+.card-button {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button a {
+  width: 150px;
+  padding-top: 10px;
+  height: 40px;
+  letter-spacing: 1.5px;
+  border: none;
+  color: #92b4ec;
+  font-weight: bold;
+  font-size: 1.6rem;
+  background: #f3f3f3;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-button a:last-child {
+  color: red;
+}
+
+.card-button a:last-child:hover {
+  background-color: red;
+  box-shadow: 0 0 30px red;
+  color: white;
+  cursor: pointer;
+}
+
+.card-button a:hover {
+  background-color: green;
+  box-shadow: 0 0 30px green;
+  color: white;
+  cursor: pointer;
+}
+
+.card-button a:active {
+  transform: translateY(4px);
+}
+form {
+  display: grid;
+  place-items: center;
+}
+
+input {
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 0.2rem solid #15133c;
+  outline: none;
+  display: list-item;
+  margin-top: 13px;
+  background: transparent;
+}
+
+.pagination-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0.8rem 2.2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #15133c;
+  color: #ffffff;
+  margin: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 998px) {
+  html {
+    font-size: 56%;
+  }
+
+  .card {
+    min-width: 45rem;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 7680) {
+  html {
+    font-size: 51%;
+  }
+
+  .card {
+    min-width: 35rem;
+    padding: 2rem;
+  }
+}
